@@ -1,0 +1,209 @@
+<html>
+<head>
+  <title>Advice does not exist</title>
+  <style>
+    
+:root {
+  --default-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --font-monospace: 'Source Code Pro', monospace;
+  --background-primary: #ffffff;
+  --background-modifier-border: #ddd;
+  --text-accent: #705dcf;
+  --text-accent-hover: #7a6ae6;
+  --text-normal: #2e3338;
+  --background-secondary: #f2f3f5;
+  --background-secondary-alt: #e3e5e8;
+  --text-muted: #888888;
+  --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  --text-error: #E4374B;
+  --background-primary-alt: '#fafafa';
+  --background-accent: '';
+  --interactive-accent: hsl( 254,  80%, calc( 68% + 2.5%));
+  --background-modifier-error: #E4374B;
+}
+
+    body,input {
+  font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+code, kbd, pre {
+  font-family: "Roboto Mono", "Courier New", Courier, monospace;
+  background-color: #f5f5f5;
+}
+
+pre {
+  padding: 1em 0.5em;
+}
+
+table {
+  background: white;
+  border: 1px solid #666;
+  border-collapse: collapse;
+  padding: 0.5em;
+}
+
+table thead th,
+table tfoot th {
+  text-align: left;
+  background-color: #eaeaea;
+  color: black;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+}
+
+table td {
+  color: #222222;
+}
+
+.callout[data-callout="abstract"] .callout-title,
+.callout[data-callout="summary"] .callout-title,
+.callout[data-callout="tldr"]  .callout-title,
+.callout[data-callout="faq"] .callout-title,
+.callout[data-callout="info"] .callout-title,
+.callout[data-callout="help"] .callout-title {
+  background-color: #828ee7;
+}
+.callout[data-callout="tip"] .callout-title,
+.callout[data-callout="hint"] .callout-title,
+.callout[data-callout="important"] .callout-title {
+  background-color: #34bbe6;
+}
+.callout[data-callout="success"] .callout-title,
+.callout[data-callout="check"] .callout-title,
+.callout[data-callout="done"] .callout-title {
+  background-color: #a3e048;
+}
+.callout[data-callout="question"] .callout-title,
+.callout[data-callout="todo"] .callout-title {
+  background-color: #49da9a;
+}
+.callout[data-callout="caution"] .callout-title,
+.callout[data-callout="attention"] .callout-title {
+  background-color: #f7d038;
+}
+.callout[data-callout="warning"] .callout-title,
+.callout[data-callout="missing"] .callout-title,
+.callout[data-callout="bug"] .callout-title {
+  background-color: #eb7532;
+}
+.callout[data-callout="failure"] .callout-title,
+.callout[data-callout="fail"] .callout-title,
+.callout[data-callout="danger"] .callout-title,
+.callout[data-callout="error"] .callout-title {
+  background-color: #e6261f;
+}
+.callout[data-callout="example"] .callout-title {
+  background-color: #d23be7;
+}
+.callout[data-callout="quote"] .callout-title,
+.callout[data-callout="cite"] .callout-title {
+  background-color: #aaaaaa;
+}
+
+.callout-icon {
+  flex: 0 0 auto;
+  display: flex;
+  align-self: center;
+}
+
+svg.svg-icon {
+  height: 18px;
+  width: 18px;
+  stroke-width: 1.75px;
+}
+
+.callout {
+  overflow: hidden;
+  margin: 1em 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.callout-title {
+  padding: .5em;
+  display: flex;
+  gap: 8px;
+  font-size: inherit;
+  color: black;
+  line-height: 1.3em;
+}
+
+.callout-title-inner {
+  font-weight: bold;
+  color: black;
+}
+
+.callout-content {
+  overflow-x: auto;
+  padding: 0.25em .5em;
+  color: #222222;
+  background-color: white !important;
+}
+
+ul.contains-task-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.contains-task-list ul.contains-task-list {
+  padding-left: 2em;
+}
+
+ul.contains-task-list li input[type="checkbox"] {
+  margin-right: .5em;
+}
+
+.callout-table,
+.callout-table tr,
+.callout-table p {
+  width: 100%;
+  padding: 0;
+}
+
+.callout-table td {
+  width: 100%;
+  padding: 0 1em;
+}
+
+.callout-table p {
+  padding-bottom: 0.5em;
+}
+
+.source-table {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+  </style>
+</head>
+<body>
+<div><p><em>All of my writing is more of a scribbly notepad than a well formatted document</em><br>
+24 Feb 2024</p>
+<p>Tweet Version: <a data-tooltip-position="top" aria-label="https://x.com/1stPrincipled/status/1742741492823740624?s=20" rel="noopener" class="external-link" href="https://x.com/1stPrincipled/status/1742741492823740624?s=20" target="_blank">Advice does not exist, at least not today.</a></p>
+<p>I firmly believe advice does not exist. Help does.As a kid, I almost never asked for any advice, I always used to think real had before giving up on a problem/situation. </p>
+<p>In India, most math textbooks have <em>hints</em> under problems to give a direction to solve the problem. I tried hard to not look at the hints and sometimes used to squint my eyes when I was looking at it. My dad used to make fun of me when I did that by saying "<em>might as well keep your eyes wide open if you are going to look at it anyway</em>".</p>
+<p>There is a fundamental problem in this. I've had the eventually led to me not even solving problems anymore and just looking at the solutions and understanding them. At some point around age 12 I started to read math and and go to exams without solving them. I just happen to score good points because I had good memory, I was able to visualize the solution and recall what I had read whenever I got stuck.</p>
+<p>Things started to change when I was introduced to calculus. I could not read math anymore. I had to solve it. While differentiation is pretty simple, integration was not.<br>
+Integration was open-ended and the only way to get good at it was by solving more problems and developing confidence and intuition to get a sense of the problem. I failed pretty hard at calculus. </p>
+<p>I had lost my ability to think deep on a problem without getting frustrated.</p>
+<h1 data-heading="Advice">Advice</h1>
+<p>While I eventually got better at calculus (thanks to an <a data-tooltip-position="top" aria-label="https://staff.pes.edu/nm1175/" rel="noopener" class="external-link" href="https://staff.pes.edu/nm1175/" target="_blank">amazing professor</a> at college), I see the same problem in a different format in my life now at age 24. Whenever I am placed in chaotic situations, I tend to seek advice from others like I used to look at hints. I almost never feel good about asking advice and I <strong>never</strong> followed any advice I was ever given. So I have stopped.</p>
+<p>I think there is nothing wrong with asking advice, but its not self-acceptable. What I mean by that is asking for advice versus asking for help is completely different. Advice is for self, help is anything external. </p>
+<p>When is comes to self, you almost always know what you should be doing. There is an inner voice always telling you what <strong><em>not</em></strong> to do. There are 2 hard things about the inner voice:</p>
+<ul>
+<li>Its hard to pay attention to it, in the chaos of life</li>
+<li>If paid attention to, its hard to obey it</li>
+</ul>
+<p>I know I should not hit the snooze button, I know I should not eat an entire pizza at once, I know I should not lie to myself and convince myself to eat the entire pizza, I know I should not eat an entire pizza and then write about it to make myself feel better.</p>
+<p>Paying attention to the inner voice makes you self aware, obeying the inner voice makes you feel alone with god.</p>
+<p>Paying attention to the inner voice makes you realize you might be a hypocrite, obeying the inner voice makes you sweat and suffer.</p>
+<p>Paying attention to the inner voice gives rise to existential angst, obeying the inner voice makes you realize its a part of life.</p>
+<p>Asking for advice is an act of self treason. You are reluctant to pay attention to you inner voice and think deeper without looking for hints. There is no person in the world who knows you better than you, so asking for advice is a lack of clear thinking, and a step towards resistance to suffering.</p>
+<h1 data-heading="Help">Help</h1>
+<p>Help is something that is completely different. Help is only needed in case of hopelessness, inexperience, lack of knowledge. </p>
+<p>Asking for help is only genuine if you are not asking for advice.</p></div>
+</body>
+</html>
