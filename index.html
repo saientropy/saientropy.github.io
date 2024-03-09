@@ -2,24 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure proper rendering and touch zooming on mobile devices -->
     <title>Sai</title>
     <style>
         body {
             display: flex;
             justify-content: center;
-            align-items: center; /* Added to center content vertically */
-            height: 100vh; /* Full height */
+            align-items: flex-start; /* Changed from center to flex-start to make top part scrollable */
+            height: auto; /* Changed from 100vh to auto to ensure content is scrollable on all devices */
+            font-size: 16px; /* Base font size for better readability on all devices */
         }
         article, header, section, nav, footer {
             max-width: 600px; 
             width: 100%; /* Ensure it takes up the available width up to max-width */
             box-sizing: border-box; /* Include padding and border in the element's width */
-            margin: 0 auto; /* Center the content horizontally */
+            margin: 20px auto; /* Increased margin to center the content horizontally and add space on top and bottom */
+            font-size: 1rem; /* Ensures font size scales properly according to the base font size set on body */
+        }
+        @media (max-width: 600px) {
+            body {
+                font-size: 14px; /* Slightly smaller font size for smaller devices for better fit */
+            }
+            article, header, section, nav, footer {
+                margin: 10px auto; /* Reduced margin for smaller devices */
+            }
         }
     </style>
 </head>
 <body>
-    <div> <!-- Wrapper div to center everything -->
+    <div> <!-- Wrapper div to center everything and allow for scrolling -->
         <header>
             <h1>Sai Smaran</h1>
             <p>Born Y2K in 🇮🇳<br>2000-2010: Played a lot of <a href="https://en.wikipedia.org/wiki/Cricket">cricket</a>, developed a love for beaches, photosynthesis, solar eclipses, puzzles, ironman and astronauts.<br>2010-2020: Played a lot more cricket, went to a <a href="http://srkvs.org">school run by monks</a>, learned about <a href="https://en.wikipedia.org/wiki/Advaita_Vedanta">advaita-vedanta philosophy</a>, got into mechanical engineering because I loved iron man and built <a href="https://youtu.be/1jHtXxLil3w?si=RZZQwsnx3zFhCCBt">race cars</a> and RC planes.<br>2020-2023: Developed a keen interest in chemistry and astronomy, came to the 🇺🇸 to study materials science.<br>2024: PhD student at Duke University studying <a href="https://en.wikipedia.org/wiki/Metamaterial">metamaterials</a> which are basically magic, advised by <a href="https://ece.duke.edu/faculty/david-smith">Dr. David Smith</a> and my research group is <a href="https://people.ee.duke.edu/~drsmith/">Meta Group</a>.</p>
@@ -87,6 +98,6 @@
         
         <footer>
         </footer>
-    </div> <!-- End of wdftghysfdgthsfghfsghdfsghdfghdfghdfghsfghsfghsfghsfghfsghsfghsfghapper div -->
+    </div> <!-- End of wrapper div -->
 </body>
 </html>
