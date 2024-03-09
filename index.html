@@ -11,6 +11,11 @@
             align-items: flex-start; /* Changed from center to flex-start to make top part scrollable */
             /* height: auto; Changed from 100vh to auto to ensure content is scrollable on all devices */
             font-size: 20px; /* Base font size for better readability on all devices */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+        }
+        body.dark-mode {
+            background-color: #121212; /* Dark background for dark mode */
+            color: #e0e0e0; /* Light text for dark mode */
         }
         article, header, section, nav, footer {
             max-width: 600px; 
@@ -28,9 +33,27 @@
             }
         }
     </style>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            // Save the dark mode preference in local storage
+            if(document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+        // Check for saved user preference, if any, on page load
+        document.addEventListener('DOMContentLoaded', (event) => {
+            if(localStorage.getItem('darkMode') === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
 </head>
 <body>
     <div> <!-- Wrapper div to center everything and allow for scrolling -->
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <header>
             <h1>Sai Smaran</h1>
             <ul>
@@ -62,7 +85,7 @@
         <section>
             <h2>Writings</h2>
             <ul>
-                <li><a href="advicedoesnotexist.html">Advice does not exist</a></li>
+                <li><a href="advicedoesnotexist.html" target="_blank">Advice does not exist</a></li>
             </ul>
             <p></p>
         </section>
