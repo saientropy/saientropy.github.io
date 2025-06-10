@@ -4,35 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure proper rendering and touch zooming on mobile devices -->
     <title>Sai</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Changed from center to flex-start to make top part scrollable */
-            /* height: auto; Changed from 100vh to auto to ensure content is scrollable on all devices */
-            font-size: 20px; /* Base font size for better readability on all devices */
-            transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
-        }
-        body.dark-mode {
-            background-color: #121212; /* Dark background for dark mode */
-            color: #e0e0e0; /* Light text for dark mode */
-        }
-        article, header, section, nav, footer {
-            max-width: 600px; 
-            width: 100%; /* Ensure it takes up the available width up to max-width */
-            box-sizing: border-box; /* Include padding and border in the element's width */
-            margin: 20px auto; /* Increased margin to center the content horizontally and add space on top and bottom */
-            font-size: 1rem; /* Ensures font size scales properly according to the base font size set on body */
-        }
-        @media (max-width: 600px) {
-            body {
-                font-size: 14px; /* Slightly smaller font size for smaller devices for better fit */
-            }
-            article, header, section, nav, footer {
-                margin: 10px auto; /* Reduced margin for smaller devices */
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <script>
         function toggleDarkMode() {
             document.body.classList.toggle('dark-mode');
@@ -52,8 +24,8 @@
     </script>
 </head>
 <body>
-    <div> <!-- Wrapper div to center everything and allow for scrolling -->
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <div class="container"> <!-- Wrapper div to center everything and allow for scrolling -->
+        <button class="toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <header>
             <h1>Sai Smaran</h1>
             <ul>
